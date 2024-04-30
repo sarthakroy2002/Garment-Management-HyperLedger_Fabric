@@ -1,0 +1,19 @@
+{
+   "extends":"@tsconfig/node18/tsconfig.json",
+   "module": "commonjs",
+   "esModuleInterop": true,
+   "compilerOptions": {
+       "experimentalDecorators": true,
+       "emitDecoratorMetadata": true,
+       "outDir": "dist",
+       "declaration": true,
+       "sourceMap": true,
+       "noImplicitAny": true
+   },
+   "include": [
+       "./src/**/*"
+   ],
+   "exclude": [
+       "./src/**/*.spec.ts"
+   ]
+}

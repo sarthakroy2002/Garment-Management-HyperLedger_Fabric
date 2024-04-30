@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garment Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Garment Management System</h1>
+    </header>
+    <main>
+        <div id="create-form">
+            <h2>Create a New Garment</h2>
+            <form id="create-garment-form">
+                <label for="garment-id">Garment ID:</label>
+                <input type="text" id="garment-id" name="garment-id" required>
+                <label for="color">Color:</label>
+                <input type="text" id="color" name="color" required>
+                <label for="size">Size:</label>
+                <input type="text" id="size" name="size" required>
+                <label for="owner">Owner:</label>
+                <input type="text" id="owner" name="owner" required>
+                <label for="appraised-value">Appraised Value:</label>
+                <input type="text" id="appraised-value" name="appraised-value" required>
+                <button type="submit">Create Garment</button>
+            </form>
+        </div>
+        <div id="garments-list">
+            <h2>All Garments</h2>
+            <ul id="garments"></ul>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
